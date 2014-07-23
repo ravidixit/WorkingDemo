@@ -17,23 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
     
     // initalized the superheroes array
     superHeroes = [[NSMutableArray alloc]initWithObjects:@"IronMan",@"Thor",@"HULK",@"SuperMan",@"Batman",@"WonderWoman",@"Flash",@"Arrow",@"Wolverien", nil];
-    
-    
-    NSMutableArray *array =
-    
-    [NSMutableArray arrayWithObjects:@"Nick", @"Ben", @"Adam", @"Melissa", nil];
-    
-    
-
-    NSPredicate *sPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] 'n'"];
-    
-    [array filterUsingPredicate:sPredicate];
-    
-    
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope{
@@ -42,6 +29,7 @@
     searchedHeroes = [superHeroes filteredArrayUsingPredicate:resultPredicate];
 }
 
+#pragma mark searchDisplayController delegate
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
     [self filterContentForSearchText:searchString
                                scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
@@ -49,8 +37,6 @@
                                                      selectedScopeButtonIndex]]];
     return YES;
 }
-
-
 
 #pragma mark UITableView datasource and delegate methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
