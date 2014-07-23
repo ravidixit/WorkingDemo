@@ -20,7 +20,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // initalized the superheroes array
-    superHeroes = [[NSMutableArray alloc]initWithObjects:@"IronMan",@"Thor",@"HULK",@"SuperMan",@"Batman",@"WonderWoman",@"Flash",@"Arrow",@"Wolverien", nil];
+    superHeroes = [[NSMutableArray alloc]initWithObjects:@"IronMan",@"Thor",@"HULK",@"SuperMan",
+                   @"Batman",@"WonderWoman",@"Flash",@"Arrow",@"Wolverien", nil];
 }
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope{
@@ -40,7 +41,7 @@
 
 #pragma mark UITableView datasource and delegate methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
+    
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [searchedHeroes count];
     } else {
@@ -56,13 +57,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
     
-     if (tableView == self.searchDisplayController.searchResultsTableView) {
-         cell.textLabel.text = [searchedHeroes objectAtIndex:indexPath.row];
-     }else{
-          cell.textLabel.text = [superHeroes objectAtIndex:indexPath.row];
-     }
-    
-   
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell.textLabel.text = [searchedHeroes objectAtIndex:indexPath.row];
+    }else{
+        cell.textLabel.text = [superHeroes objectAtIndex:indexPath.row];
+    }
     return cell;
 }
 
