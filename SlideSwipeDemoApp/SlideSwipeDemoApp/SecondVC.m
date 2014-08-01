@@ -30,25 +30,43 @@
     [self.view setBackgroundColor:[UIColor greenColor]];
     
     
-   [self.navigationItem setHidesBackButton:YES];
+ //  [self.navigationItem setHidesBackButton:YES];
+    
+    
+   
+    
+    self.title = @"Second VC";
+    
+    [self.navigationItem setBackBarButtonItem:nil];
+    [self.navigationItem setHidesBackButton:YES animated:NO];
+    
+   
+    
+  
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
     
     SWRevealViewController *revealController = [self revealViewController];
-
-    [revealController panGestureRecognizer];
-    [revealController tapGestureRecognizer];
-    
-    
-    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon.png"]
-                                                                         style:UIBarButtonItemStyleBordered target:revealController action:@selector(revealToggle:)];
-    
-    self.navigationItem.leftBarButtonItem = revealButtonItem;
-    
     revealController.tapGestureRecognizer.enabled = YES;
     revealController.panGestureRecognizer.enabled = YES;
     
-    revealController.rightViewRevealWidth = 0;
+    [revealController panGestureRecognizer];
+    [revealController tapGestureRecognizer];
     
+
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon.png"]
+                                                                             style:UIBarButtonItemStylePlain target:revealController action:@selector(revealToggle:)];
+    
+    
+    
+    UIBarButtonItem *rightRevealButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"reveal-icon.png"]
+                                                                              style:UIBarButtonItemStyleBordered target:revealController action:@selector(rightRevealToggle:)];
+    
+    self.navigationItem.rightBarButtonItem = rightRevealButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
