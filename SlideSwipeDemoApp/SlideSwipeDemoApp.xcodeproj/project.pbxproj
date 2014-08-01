@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84B7F221198BCDCE001C4759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F220198BCDCE001C4759 /* Foundation.framework */; };
+		84B7F223198BCDCE001C4759 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F222198BCDCE001C4759 /* CoreGraphics.framework */; };
+		84B7F225198BCDCE001C4759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F224198BCDCE001C4759 /* UIKit.framework */; };
+		84B7F22B198BCDCE001C4759 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84B7F229198BCDCE001C4759 /* InfoPlist.strings */; };
+		84B7F22D198BCDCE001C4759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F22C198BCDCE001C4759 /* main.m */; };
+		84B7F231198BCDCE001C4759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F230198BCDCE001C4759 /* AppDelegate.m */; };
+		84B7F233198BCDCE001C4759 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B7F232198BCDCE001C4759 /* Images.xcassets */; };
+		84B7F23A198BCDCE001C4759 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F239198BCDCE001C4759 /* XCTest.framework */; };
+		84B7F23B198BCDCE001C4759 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F220198BCDCE001C4759 /* Foundation.framework */; };
+		84B7F23C198BCDCE001C4759 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F224198BCDCE001C4759 /* UIKit.framework */; };
+		84B7F244198BCDCE001C4759 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84B7F242198BCDCE001C4759 /* InfoPlist.strings */; };
+		84B7F246198BCDCE001C4759 /* SlideSwipeDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F245198BCDCE001C4759 /* SlideSwipeDemoAppTests.m */; };
+		84B7F251198BCE5E001C4759 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F250198BCE5E001C4759 /* FirstVC.m */; };
+		84B7F254198BCF83001C4759 /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F253198BCF83001C4759 /* SecondVC.m */; };
+		84B7F257198BCF90001C4759 /* LeftVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F256198BCF90001C4759 /* LeftVC.m */; };
+		84B7F284198BD49D001C4759 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B7F283198BD49D001C4759 /* QuartzCore.framework */; };
+		84B7F287198BD8D8001C4759 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B7F286198BD8D8001C4759 /* SWRevealViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B7F23D198BCDCE001C4759 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B7F215198BCDCD001C4759 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B7F21C198BCDCD001C4759;
+			remoteInfo = SlideSwipeDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84B7F21D198BCDCE001C4759 /* SlideSwipeDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideSwipeDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B7F220198BCDCE001C4759 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84B7F222198BCDCE001C4759 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84B7F224198BCDCE001C4759 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84B7F228198BCDCE001C4759 /* SlideSwipeDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideSwipeDemoApp-Info.plist"; sourceTree = "<group>"; };
+		84B7F22A198BCDCE001C4759 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84B7F22C198BCDCE001C4759 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84B7F22E198BCDCE001C4759 /* SlideSwipeDemoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideSwipeDemoApp-Prefix.pch"; sourceTree = "<group>"; };
+		84B7F22F198BCDCE001C4759 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84B7F230198BCDCE001C4759 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84B7F232198BCDCE001C4759 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84B7F238198BCDCE001C4759 /* SlideSwipeDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideSwipeDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B7F239198BCDCE001C4759 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84B7F241198BCDCE001C4759 /* SlideSwipeDemoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlideSwipeDemoAppTests-Info.plist"; sourceTree = "<group>"; };
+		84B7F243198BCDCE001C4759 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84B7F245198BCDCE001C4759 /* SlideSwipeDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideSwipeDemoAppTests.m; sourceTree = "<group>"; };
+		84B7F24F198BCE5E001C4759 /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		84B7F250198BCE5E001C4759 /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		84B7F252198BCF83001C4759 /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		84B7F253198BCF83001C4759 /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
+		84B7F255198BCF90001C4759 /* LeftVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftVC.h; sourceTree = "<group>"; };
+		84B7F256198BCF90001C4759 /* LeftVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftVC.m; sourceTree = "<group>"; };
+		84B7F283198BD49D001C4759 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		84B7F285198BD8D8001C4759 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = SlideSwipeDemoApp/SWRevealViewController.h; sourceTree = "<group>"; };
+		84B7F286198BD8D8001C4759 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = SlideSwipeDemoApp/SWRevealViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B7F21A198BCDCD001C4759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7F284198BD49D001C4759 /* QuartzCore.framework in Frameworks */,
+				84B7F223198BCDCE001C4759 /* CoreGraphics.framework in Frameworks */,
+				84B7F225198BCDCE001C4759 /* UIKit.framework in Frameworks */,
+				84B7F221198BCDCE001C4759 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7F235198BCDCE001C4759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7F23A198BCDCE001C4759 /* XCTest.framework in Frameworks */,
+				84B7F23C198BCDCE001C4759 /* UIKit.framework in Frameworks */,
+				84B7F23B198BCDCE001C4759 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84B7F214198BCDCD001C4759 = {
+			isa = PBXGroup;
+			children = (
+				84B7F285198BD8D8001C4759 /* SWRevealViewController.h */,
+				84B7F286198BD8D8001C4759 /* SWRevealViewController.m */,
+				84B7F255198BCF90001C4759 /* LeftVC.h */,
+				84B7F256198BCF90001C4759 /* LeftVC.m */,
+				84B7F226198BCDCE001C4759 /* SlideSwipeDemoApp */,
+				84B7F23F198BCDCE001C4759 /* SlideSwipeDemoAppTests */,
+				84B7F21F198BCDCE001C4759 /* Frameworks */,
+				84B7F21E198BCDCE001C4759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84B7F21E198BCDCE001C4759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B7F21D198BCDCE001C4759 /* SlideSwipeDemoApp.app */,
+				84B7F238198BCDCE001C4759 /* SlideSwipeDemoAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B7F21F198BCDCE001C4759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B7F283198BD49D001C4759 /* QuartzCore.framework */,
+				84B7F220198BCDCE001C4759 /* Foundation.framework */,
+				84B7F222198BCDCE001C4759 /* CoreGraphics.framework */,
+				84B7F224198BCDCE001C4759 /* UIKit.framework */,
+				84B7F239198BCDCE001C4759 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84B7F226198BCDCE001C4759 /* SlideSwipeDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				84B7F22F198BCDCE001C4759 /* AppDelegate.h */,
+				84B7F230198BCDCE001C4759 /* AppDelegate.m */,
+				84B7F232198BCDCE001C4759 /* Images.xcassets */,
+				84B7F227198BCDCE001C4759 /* Supporting Files */,
+				84B7F24F198BCE5E001C4759 /* FirstVC.h */,
+				84B7F250198BCE5E001C4759 /* FirstVC.m */,
+				84B7F252198BCF83001C4759 /* SecondVC.h */,
+				84B7F253198BCF83001C4759 /* SecondVC.m */,
+			);
+			path = SlideSwipeDemoApp;
+			sourceTree = "<group>";
+		};
+		84B7F227198BCDCE001C4759 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B7F228198BCDCE001C4759 /* SlideSwipeDemoApp-Info.plist */,
+				84B7F229198BCDCE001C4759 /* InfoPlist.strings */,
+				84B7F22C198BCDCE001C4759 /* main.m */,
+				84B7F22E198BCDCE001C4759 /* SlideSwipeDemoApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B7F23F198BCDCE001C4759 /* SlideSwipeDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B7F245198BCDCE001C4759 /* SlideSwipeDemoAppTests.m */,
+				84B7F240198BCDCE001C4759 /* Supporting Files */,
+			);
+			path = SlideSwipeDemoAppTests;
+			sourceTree = "<group>";
+		};
+		84B7F240198BCDCE001C4759 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B7F241198BCDCE001C4759 /* SlideSwipeDemoAppTests-Info.plist */,
+				84B7F242198BCDCE001C4759 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B7F21C198BCDCD001C4759 /* SlideSwipeDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B7F249198BCDCE001C4759 /* Build configuration list for PBXNativeTarget "SlideSwipeDemoApp" */;
+			buildPhases = (
+				84B7F219198BCDCD001C4759 /* Sources */,
+				84B7F21A198BCDCD001C4759 /* Frameworks */,
+				84B7F21B198BCDCD001C4759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideSwipeDemoApp;
+			productName = SlideSwipeDemoApp;
+			productReference = 84B7F21D198BCDCE001C4759 /* SlideSwipeDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84B7F237198BCDCE001C4759 /* SlideSwipeDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B7F24C198BCDCE001C4759 /* Build configuration list for PBXNativeTarget "SlideSwipeDemoAppTests" */;
+			buildPhases = (
+				84B7F234198BCDCE001C4759 /* Sources */,
+				84B7F235198BCDCE001C4759 /* Frameworks */,
+				84B7F236198BCDCE001C4759 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B7F23E198BCDCE001C4759 /* PBXTargetDependency */,
+			);
+			name = SlideSwipeDemoAppTests;
+			productName = SlideSwipeDemoAppTests;
+			productReference = 84B7F238198BCDCE001C4759 /* SlideSwipeDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B7F215198BCDCD001C4759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = FLPUNPDSMAC;
+				TargetAttributes = {
+					84B7F237198BCDCE001C4759 = {
+						TestTargetID = 84B7F21C198BCDCD001C4759;
+					};
+				};
+			};
+			buildConfigurationList = 84B7F218198BCDCD001C4759 /* Build configuration list for PBXProject "SlideSwipeDemoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84B7F214198BCDCD001C4759;
+			productRefGroup = 84B7F21E198BCDCE001C4759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B7F21C198BCDCD001C4759 /* SlideSwipeDemoApp */,
+				84B7F237198BCDCE001C4759 /* SlideSwipeDemoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B7F21B198BCDCD001C4759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7F22B198BCDCE001C4759 /* InfoPlist.strings in Resources */,
+				84B7F233198BCDCE001C4759 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7F236198BCDCE001C4759 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7F244198BCDCE001C4759 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B7F219198BCDCD001C4759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7F231198BCDCE001C4759 /* AppDelegate.m in Sources */,
+				84B7F251198BCE5E001C4759 /* FirstVC.m in Sources */,
+				84B7F254198BCF83001C4759 /* SecondVC.m in Sources */,
+				84B7F257198BCF90001C4759 /* LeftVC.m in Sources */,
+				84B7F22D198BCDCE001C4759 /* main.m in Sources */,
+				84B7F287198BD8D8001C4759 /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B7F234198BCDCE001C4759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B7F246198BCDCE001C4759 /* SlideSwipeDemoAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B7F23E198BCDCE001C4759 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B7F21C198BCDCD001C4759 /* SlideSwipeDemoApp */;
+			targetProxy = 84B7F23D198BCDCE001C4759 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84B7F229198BCDCE001C4759 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B7F22A198BCDCE001C4759 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84B7F242198BCDCE001C4759 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B7F243198BCDCE001C4759 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B7F247198BCDCE001C4759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		84B7F248198BCDCE001C4759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B7F24A198BCDCE001C4759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideSwipeDemoApp/SlideSwipeDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "SlideSwipeDemoApp/SlideSwipeDemoApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84B7F24B198BCDCE001C4759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideSwipeDemoApp/SlideSwipeDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "SlideSwipeDemoApp/SlideSwipeDemoApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84B7F24D198BCDCE001C4759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SlideSwipeDemoApp.app/SlideSwipeDemoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideSwipeDemoApp/SlideSwipeDemoApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SlideSwipeDemoAppTests/SlideSwipeDemoAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84B7F24E198BCDCE001C4759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SlideSwipeDemoApp.app/SlideSwipeDemoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlideSwipeDemoApp/SlideSwipeDemoApp-Prefix.pch";
+				INFOPLIST_FILE = "SlideSwipeDemoAppTests/SlideSwipeDemoAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B7F218198BCDCD001C4759 /* Build configuration list for PBXProject "SlideSwipeDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7F247198BCDCE001C4759 /* Debug */,
+				84B7F248198BCDCE001C4759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B7F249198BCDCE001C4759 /* Build configuration list for PBXNativeTarget "SlideSwipeDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7F24A198BCDCE001C4759 /* Debug */,
+				84B7F24B198BCDCE001C4759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84B7F24C198BCDCE001C4759 /* Build configuration list for PBXNativeTarget "SlideSwipeDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B7F24D198BCDCE001C4759 /* Debug */,
+				84B7F24E198BCDCE001C4759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B7F215198BCDCD001C4759 /* Project object */;
+}
